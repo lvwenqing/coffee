@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/联系我们.css">
+   <style type="text/css">
+		#allmap {width: 660px;height: 344px;float: left; overflow: hidden;margin:0;font-family:"微软雅黑";}
+	</style>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=dRizyPdalxmBOGCvd83mV4seFWw5EMIS"></script>
+	
+</head>
+
+<body>
+    <div id="top">
+        <div class="top common">
+            <a href=""><img src="../images/logo-1.png" alt=""></a>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">产品介绍</a></li>
+                <li><a href="#">公司团队</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="banner">
+        <img src="../images/banner-4.png" alt="">
+    </div>
+
+    <div class="content ">
+        <div class="ctop">
+            <ul class="ul1">
+                <li><a href="#">
+                        <img src="../images/gsjj-ct-1.png" alt="">
+                        <h4>联系我们</h4>
+                        <h5>Company profile
+                        </h5>
+                    </a></li>
+
+            </ul>
+            <ul class="ul2 fr">
+                <li><a href="#">
+                        <h6>当前位置>
+                        </h6>
+                    </a></li>
+                <li><a href="#">
+                        <h6>首页>
+                        </h6>
+                    </a></li>
+                <li><a href="#">
+                        <h6>联系我们
+                        </h6>
+                    </a></li>
+               
+
+            </ul>
+        </div>
+        <div  class="c-foot">
+           <!-- <img --><!--style="display: none;" class="img1" src="../images/map-4.png" alt="">-->
+            	<div id="allmap" class="img1"></div>
+            <ul >
+                <li>
+                    <a href="#">
+                        <img class="fl" src="../images/foot-2.png" alt="">
+                        <div class="fr">
+                            <h4>咨询热线</h4>
+                            <p>Information Hotline</p>
+                            <h6>重庆: +86 023-867-7848</h6>
+                            <p>(09 : 30~18: 30北京时间)</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="li2">
+                    <a href="#">
+                        <img class="fl" src="../images/foot-3.png" alt="">
+                        <div class="fr">
+                            <h4>咨询热线</h4>
+                            <p>Information Hotline</p>
+                            <h6>重庆: +86 023-867-7848</h6>
+                            <p>(09 : 30~18: 30北京时间)</p>
+                        </div>
+                    </a>
+                </li> 
+                <li>
+                    <a href="#">
+                        <img class="fl" src="../images/foot-4.png" alt="">
+                        <div class="fr">
+                            <h4>咨询热线</h4>
+                            <p>Information Hotline</p>
+                            <h6>重庆: +86 023-867-7848</h6>
+                            <p>(09 : 30~18: 30北京时间)</p>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <div id="copy">
+        <div class="copy common">
+            <p>COPYRIGHT◎重庆DUZU有限公司&nbsp;|&nbsp;DUZU备案号 33010602001878 号版权所有:重庆戈登有限公司
+            </p>
+            <img src="../images/copy-0.png" alt="">
+
+        </div>
+    </div>
+
+<script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");            
+	map.centerAndZoom("重庆",12);                
+	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+</script>
+</body>
+
+</html>

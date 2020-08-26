@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>咖啡首页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/coffee首页.css">
+    
+     <style type="text/css">
+		#allmap {width: 700px;height: 344px;/*float: left;*/ overflow: hidden;margin:0;font-family:"微软雅黑";}
+	     
+			body{
+				position: relative;
+			}
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			#dbox {
+				width: 100%;
+				overflow: hidden;
+				
+			}
+			#dbox #lunbox {
+				width: 400%;
+				font-size: 0;
+				transition: all 1s;
+			}
+			#dbox #lunbox img{
+				vertical-align: top;
+				width: 25%;
+				display: inline-block;
+				/*font-size: 0;*/
+				/*float: left;*/
+			}
+			button{
+				width: 50px;
+				height: 50px;
+				font-size: 30px;
+				background-color: #444;
+				opacity: .5;
+				border-radius: 50%;
+				position: absolute;
+				top: 10%;
+				margin-top: -25px;
+				cursor: pointer;
+				
+			}
+			#b1{
+				left: 20px;
+			}
+			#b2{
+				right: 20px;
+			}
+			#banner>ul{
+				width: 120px;
+				position: absolute;
+				top: 14.5%;
+				left: 48%;
+				/*padding-right: 5px;*/
+				/*margin-right: -50px;*/
+			}
+			#banner>ul>li{
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				background-color: #58bc58;
+				float: left;
+				margin-right: 10px;
+				cursor: pointer;
+			}
+			#banner>ul>li.active{
+				background-color: red;
+			}
+		
+     
+     </style>
+	<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=dRizyPdalxmBOGCvd83mV4seFWw5EMIS"></script>
+</head>
+
+<body>
+    <div id="top">
+        <div class="top common">
+            <a href=""><img src="../images/logo-1.png" alt=""></a>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">产品介绍</a></li>
+                <li><a href="#">公司团队</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="banner">
+        <!--<img src="../images/banner.png" alt="">-->
+        <!--<img src="../images/1111.jpg" alt="">-->
+        
+         <button id="b1">></button>
+			<button id="b2"><</button>
+			
+			<div id="dbox">
+				<div id="lunbox">
+					<img src="../images/1.jpg"/>
+					<img src="../images/2.jpg"/>
+					<img src="../images/3.jpg"/>
+					<img src="../images/4.jpg"/>
+				</div>
+			</div>
+			<ul>
+				<li np="0" class="active"></li>
+				<li np="1"></li>
+				<li np="2"></li>
+				<li np="3"></li>
+				
+			</ul>
+        <!--<img " src="../images/关于我们.png" alt="">-->
+    </div>
+
+    <div id="ctop">
+        <div class="ctop common">
+            <h3>关于我们</h3>
+            <div>
+                <img class="img-l
+                " src="../images/border-l.png" alt="">
+                <span> About Us</span>
+                <img class="img-r" src="../images/border-r.png" alt="">
+            </div>
+            <img class="img-f" src="../images/about-us.png" alt="">
+        </div>
+    </div>
+    <div id="ctop2">
+        <div class="ctop2 common">
+            <img class="fl" src="../images/c-1.png" alt="">
+            <div class="fl">
+                <h3>公司简介</h3>
+                <span>——</span>
+                <p>二十世纪三十年代,巴西咖啡豆生产过剩，剩余的咖啡豆只能当燃料消耗,非常可惜。当巴西政府向雀巢公司寻求咖啡豆过剩的解决方法的时候，并没有意识到这最终成就了-一个历久弥醇 的伟大的咖啡品牌。1930年
+                    ,巴西咖啡连续经历了几次大丰收,短期内难以完全销售,便向雀巢求助，寻求令咖啡不失香醇的长期保存方式。咖啡权威一马克思●莫根特尔(Max
+                    Morgenthaler)立刻同他的研究队伍着手研究,试图制造一种既可以较好保存咖啡芳香又易溶于热水的"固体咖啡"。经过在雀巢瑞士实验室长达七年的不懈努力,
+                    30年代末,雀巢向市场推出速溶咖啡，”雀巢咖啡”品牌创立。</p>
+                <p>二十世纪三十年代,巴西咖啡豆生产过剩，剩余的咖啡豆只能当燃料消耗,非常可惜。当巴西政府向雀巢公司寻求咖啡豆过剩的解决方法的时候，并没有意识到这最终成就了-一个历久弥醇 的伟大的咖啡品牌。1930年
+                    ,巴西咖啡连续经历了几次大丰收,短期内难以完全销售,便向雀巢求助，寻求令咖啡不失香醇的长期保存方式。咖啡权威一马克思●莫根特尔(Max
+                    Morgenthaler)立刻同他的研究队伍着手研究,试图制造一种既可以较好保存咖啡芳香又易溶于热水的"固体咖啡"。经过在雀巢瑞士实验室长达七年的不懈努力,
+                    30年代末,雀巢向市场推出速溶咖啡，”雀巢咖啡”品牌创立。</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="banner-2">
+        <img src="../images/banner-22.png" alt="">
+    </div>
+
+    <div id="ccenter">
+        <div class="cct common">
+            <h3>产品介绍</h3>
+            <div>
+                <img class="img-l
+            " src="../images/border-l.png" alt="">
+                <span> Product</span>
+                <img class="img-r" src="../images/border-r.png" alt="">
+            </div>
+            <img class="img-ff" src="../images/about-us.png" alt="">
+        </div>
+        <div class="cct2 common">
+            <a>
+                <img src="../images/cpjs-1.png" alt="">
+                <h4>拿铁咖啡</h4>
+                <span>——</span>
+                <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料,带来让人难以忘怀的味道。</p>
+            </a>
+            <a>
+                <img src="../images/cpjs-1.png" alt="">
+                <h4>卡布奇诺</h4>
+                <span>——</span>
+                <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料,带来让人难以忘怀的味道。</p>
+            </a>
+            <a class="a3">
+                <img src="../images/cpjs-1.png" alt="">
+                <h4>摩卡咖啡</h4>
+                <span>——</span>
+                <p>拿铁咖啡是意大利浓缩咖啡(Espresso)与牛奶的经典混合，意大利人也很喜欢把拿铁作为早餐的饮料,带来让人难以忘怀的味道。</p>
+            </a>
+        </div>
+    </div>
+    <div id="cfoot">
+        <div class="cfoot common">
+            <h3>公司团队</h3>
+            <div class="cftop">
+                <img class="img-l
+            " src="../images/border-l.png" alt="">
+                <span> Our team</span>
+                <img class="img-r" src="../images/border-r.png" alt="">
+            </div>
+            <img class="img-ff" src="../images/about-us.png" alt="">
+            <div class="cffoot">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/gstd-1.png" alt="">
+                        </a>
+                    </li>
+                    <div>
+                        <h4>查理.普斯</h4>
+                        <p>Charlie Puth</p>
+                    </div>
+
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/gstd-2.png" alt="">
+                        </a>
+                    </li>
+                    <div>
+                        <h4>查理.普斯</h4>
+                        <p>Charlie Puth</p>
+                    </div>
+
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="../images/gstd-3.png" alt="">
+                        </a>
+                    </li>
+                    <div>
+                        <h4>查理.普斯</h4>
+                        <p>Charlie Puth</p>
+                    </div>
+
+                </ul>
+
+                <ul class="ul-last">
+                    <li>
+                        <a href="#">
+                            <img src="../images/gstd4-.png" alt="">
+                        </a>
+                    </li>
+                    <div>
+                        <h4>查理.普斯</h4>
+                        <p>Charlie Puth</p>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div class="foot common">
+            <div class="ft common">
+                <h3>联系我们</h3>
+                <div>
+                    <img class="img-l
+                " src="../images/border-l.png" alt="">
+                    <span> Contact us</span>
+                    <img class="img-r" src="../images/border-r.png" alt="">
+                </div>
+                <img class="img-ff" src="../images/about-us.png" alt="">
+            </div>
+            <div class="ft2">
+                <!--<img class="fl img1" src="../images/ditu.png" alt="">-->
+                <div id="allmap" class="fl img1"></div><!-- 地图-->
+                <ul class="fl">
+                    <li>
+                        <a href="#">
+                            <img class="fl" src="../images/foot-2.png" alt="">
+                            <div class="fr">
+                                <h4>咨询热线</h4>
+                                <p>Information Hotline</p>
+                                <h6>重庆: +86 023-867-7848</h6>
+                                <p>(09 : 30~18: 30北京时间)</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="li2">
+                        <a href="#">
+                            <img class="fl" src="../images/foot-3.png" alt="">
+                            <div class="fr">
+                                <h4>咨询热线</h4>
+                                <p>Information Hotline</p>
+                                <h6>重庆: +86 023-867-7848</h6>
+                                <p>(09 : 30~18: 30北京时间)</p>
+                            </div>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="#">
+                            <img class="fl" src="../images/foot-4.png" alt="">
+                            <div class="fr">
+                                <h4>咨询热线</h4>
+                                <p>Information Hotline</p>
+                                <h6>重庆: +86 023-867-7848</h6>
+                                <p>(09 : 30~18: 30北京时间)</p>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div id="copy">
+        <div class="copy common">
+            <p>COPYRIGHT◎重庆DUZU有限公司&nbsp;|&nbsp;DUZU备案号 33010602001878 号版权所有:重庆戈登有限公司
+            </p>
+            <img src="../images/copy-0.png" alt="">
+
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+<!--    
+    <button id="b1">></button>
+	<button id="b2"><</button>
+			
+			<div id="dbox">
+				<div id="lunbox">
+					<img src=""/>
+					<img src="../img/2.jpg"/>
+					<img src="../img/3.jpg"/>
+					<img src="../img/4.jpg"/>
+				</div>
+			</div>
+			<ul>
+				<li np="0" class="active"></li>
+				<li np="1"></li>
+				<li np="2"></li>
+				<li np="3"></li>
+				
+			</ul>-->
+		<!--<script type="text/javascript">
+			
+		</script>-->
+    
+    <script type="text/javascript">
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");            
+	map.centerAndZoom("重庆",12);                
+	map.enableScrollWheelZoom();   //启用滚轮放大缩小，默认禁用
+	map.enableContinuousZoom();    //启用地图惯性拖拽，默认禁用
+	
+	
+	
+	var btns=document.getElementsByTagName("button");
+			var lis=banner.getElementsByTagName("li");
+			
+			var j=0;
+			for (var i = 0; i < btns.length; i++) {
+				btns[i].onclick=function(){		
+					if(this.innerHTML=="&lt;"){
+						j++;
+						if(j==4){
+							j=0
+						}
+
+						dh(lis[j]);
+						
+					}else{
+						j--;
+						if(j==-1){
+							j=3
+						}
+						dh(lis[j]);
+					}
+				}			
+			}		
+			for (var i = 0; i < lis.length; i++) {			
+				lis[i].onclick=function(){	
+					j=this.getAttribute("np");
+					dh(this);
+				}
+			}
+			
+			
+			function dh(c1){
+				lunbox.style.marginLeft=-100*j+"%";
+				for( i= 0; i < lis.length; i++){				
+						lis[i].className="";
+					}	
+				c1.className="active";
+			}
+</script>
+</body>
+
+</html>
